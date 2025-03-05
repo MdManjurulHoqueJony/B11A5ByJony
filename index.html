@@ -9,8 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    
+<body class="px-36 pt-6 pb-16">
+    <header>
+        <nav class="flex justify-between bg-white rounded-md p-2">
+            <div class="flex gap-2">
+                <img src="./images/logo.png" alt="logo" >
+                <p class="text-4xl">Dev<strong>Board</strong></p>
+            </div>
+            <div class="flex gap-12 items-center">
+                <div class="flex gap-2 rounded-sm items-center">
+                    <img src="./images/checkbox.png" alt="checkbox" >
+                    <p><strong id="finished-tasks">23</strong></p>
+                </div>
+                <img id="change-theme" src="./images/theme-btn.png" alt="theme">
+            </div>
+        </nav>
+    </header>
     <script type="module" src="./scripts/devBoard.js"></script>
 </body>
 
