@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard-QA</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="px-36 pt-6 pb-16 bg-[#F4F7FF]">
+    <header class="mb-5">
+        <nav class="flex justify-between bg-white rounded-md p-2 items-center">
+            <div class="flex gap-2">
+                <img src="./images/logo.png" alt="logo">
+                <p class="text-4xl">Dev<strong>Board</strong></p>
+            </div>
+            <button id="btn-back" class="btn btn-primary">Back to Desk</button>
+        </nav>
+    </header>
+    <main>
+        <div class="flex justify-center mb-5">
+            <p class="font-bold">Blogs</p>
+        </div>
+        <div class="w-full space-y-4">
+
+            <div class="space-y-1">
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <h2 class="text-lg font-semibold">Question-1: What are the different ways to select an element in the DOM?</h2>
+                </div>
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <p class="text-gray-600 mt-2">We have learnt 5 different ways so far to select an element in the DOM. 
+                        <br>1. getElementById() which selects an elements by its id
+                        <br>2. getElementsByClassName() which selects elements by class name.
+                        <br>3. getElementsByTagName() which selects elements by tag name.
+                        <br>4. querySelector() which selects the first matching element using CSS selectors.
+                        <br>5. querySelectorAll() which selects all matching elements using CSS selectors.</p>
+                </div>
+            </div>
+            <div class="space-y-1">
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <h2 class="text-lg font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                </div>
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <p class="text-gray-600 mt-2"><strong>innerHTML</strong> gets or sets the HTML content inside an element and also when it is set It parses and renders HTML whereas both <strong>innerText</strong> 
+                        and <strong>textContent</strong> retrieves text but <strong>innerText</strong> does not retrieve hidden text(elements with display: none), <strong>textContent</strong> does.</p>
+                </div>
+            </div>
+            <div class="space-y-1">
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <h2 class="text-lg font-semibold">Question-3: What is event delegation in the DOM?</h2>
+                </div>
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <p class="text-gray-600 mt-2"><strong>Event Delegation</strong> in the DOM is a JavaScript technique where we attach a single event listener to a common parent element to avoid adding event listeners to multiple child elements.
+                        It works because events bubble up in the element hierarchy in DOM what we call <strong>Event Propagation</strong>. As we can see it simplifies codes, like in our assignment 5 case, we do not need to 
+                        write 6 event listeners to handle 6 task buttons, we can get the specific one by <strong>event.target</strong>.</p>
+                </div>
+            </div>
+            <div class="space-y-1">
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <h2 class="text-lg font-semibold">Question-4: What is event bubbling in the DOM?</h2>
+                </div>
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <p class="text-gray-600 mt-2">The process where an event (i.e. clicking on a button) starts from the target element (button itself which was clicked) and propagates/bubbles up to its parent elements (i.e. Elements that are containing that clicked button) in the DOM hierarchy is commonly known as  <strong>Event Bubbling</strong>.</p>
+                </div>
+            </div>
+            <div class="space-y-1">
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <h2 class="text-lg font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                </div>
+                <div class="border border-gray-300 rounded-lg p-4 bg-white shadow">
+                    <p class="text-gray-600 mt-2">To create elements we use <strong>createElement()</strong>, to add elements we use <strong>appendChild()</strong> and to remove elements we use <strong>removeChild()</strong> so far. From internet we also know there exists some other methods with minor differences for adding and removing elements.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="./scripts/qa.js"></script>
+</body>
+
+</html>
